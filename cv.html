@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Armin Iranpour – Lebenslauf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* Printable CV. The sheet stays paper-white in every theme, like a document viewer. */
+:root{
+  --desk:#e7e5e0; --sheet:#fffefb; --ink:#1a1f2b; --ink-2:#444b59; --muted:#6f7584; --rule:#d8d4cc; --navy:#1e3a5f;
+  --serif:"Source Serif 4",Georgia,serif; --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --date-col:128px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --desk:#1b1d22; } :root:not([data-theme="light"]) .bar{color:#b9bcc4} }
+:root[data-theme="dark"]{ --desk:#1b1d22; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--desk);color:var(--ink);font:400 15px/1.55 var(--sans)}
+a{color:inherit;text-decoration:none}
+.bar{max-width:860px;margin:0 auto;padding:18px 16px 12px;display:flex;justify-content:space-between;gap:16px;font-size:13.5px;color:var(--muted)}
+.bar a,.bar button{all:unset;cursor:pointer;border-bottom:1px solid transparent}
+.bar a:hover,.bar button:hover{border-bottom-color:currentColor}
+.bar span{display:flex;gap:18px}
+.sheet{max-width:860px;margin:0 auto 56px;background:var(--sheet);box-shadow:0 1px 2px rgba(0,0,0,.06),0 12px 32px -12px rgba(0,0,0,.2);padding:60px 68px 56px}
+.head{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start;padding-bottom:24px;border-bottom:1px solid var(--ink)}
+h1{font:600 38px/1.08 var(--serif);margin:0 0 10px}
+.headline{margin:0 0 14px;font-size:15px;font-weight:500;line-height:1.45}
+.contact{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;font-size:13.5px;color:var(--ink-2)}
+.contact li:not(:last-child)::after{content:"·";margin:0 9px;color:var(--muted)}
+.photo{width:112px;aspect-ratio:3/4;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block}
+section{margin-top:26px}
+h2{display:flex;align-items:center;gap:14px;font:600 12.5px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--navy);margin:0 0 14px}
+h2::after{content:"";flex:1;height:1px;background:var(--rule)}
+.summary{margin:0;line-height:1.62}
+.row{display:grid;grid-template-columns:var(--date-col) 1fr;gap:0 20px;margin-bottom:16px}
+.row:last-child{margin-bottom:0}
+.when{font-size:13.5px;color:var(--muted);padding-top:1px}
+.what h3{margin:0;font-size:15px;font-weight:600;line-height:1.4}
+.org{margin:1px 0 5px;color:var(--ink-2);font-style:italic}
+.sum{margin:0 0 4px}
+.what ul{margin:0;padding:0;list-style:none}
+.what li{position:relative;padding-left:15px;margin:2px 0}
+.what li::before{content:"–";position:absolute;left:0;color:var(--muted)}
+.tools{margin:6px 0 0;font-size:13.5px;color:var(--muted)}
+.kv{display:grid;grid-template-columns:var(--date-col) 1fr;gap:6px 20px;margin:0}
+.kv dt{color:var(--muted);font-size:13.5px;padding-top:1px}
+.kv dd{margin:0}
+.sign{margin-top:36px;font-size:14px;color:var(--ink-2)}
+.sign .name{display:inline-block;margin-top:28px;padding-top:4px;min-width:200px;border-top:1px solid var(--ink-2)}
+@media screen and (max-width:720px){
+  .sheet{padding:30px 20px;box-shadow:none;margin-bottom:0}
+  .head{grid-template-columns:1fr 80px;gap:16px} .photo{width:80px} h1{font-size:28px}
+  .row,.kv{grid-template-columns:1fr} .contact{flex-direction:column} .contact li::after{display:none}
+}
+@page{size:A4;margin:13mm 15mm 12mm}
+@media print{
+  body{background:#fff;font-size:9.3pt;line-height:1.42}
+  .bar{display:none}
+  .sheet{max-width:none;margin:0;padding:0;box-shadow:none;background:#fff}
+  :root{--date-col:26mm}
+  h1{font-size:22pt;margin-bottom:5pt}
+  .headline{font-size:10pt;margin-bottom:8pt}
+  .contact{font-size:8.8pt}
+  .photo{width:27mm}
+  .head{padding-bottom:11pt;gap:18pt}
+  section{margin-top:13pt}
+  h2{font-size:8.4pt;margin-bottom:7pt;break-after:avoid}
+  .keep{break-inside:avoid}
+  .row{margin-bottom:8pt;break-inside:avoid}
+  .when,.kv dt,.tools{font-size:8.6pt}
+  .what h3{font-size:9.9pt}
+  .what li{margin:1.2pt 0;padding-left:10pt}
+  .kv{gap:3pt 14pt}
+  .sign{margin-top:20pt;font-size:9.3pt;break-inside:avoid}
+  .sign .name{margin-top:18pt}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="bar"><a href="index.html" id="back"></a><span><a href="#" data-lang="de">Deutsch</a><a href="#" data-lang="en">English</a><button id="print">PDF</button></span></div>
+<main class="sheet">
+  <header class="head">
+    <div><h1>Armin Iranpour</h1><p class="headline" id="headline"></p><ul class="contact" id="contact"></ul></div>
+    <div class="photo"><img src="armin.jpg" alt="Armin Iranpour" width="720" height="720"></div>
+  </header>
+  <div id="body"></div>
+</main>
+<script src="content.js"></script>
+<script>
+let lang = pickLang();
+const when = d => d.split(" – ").map(esc).join(" –<br>");
+const row = (date, title, org, sum, items, tools) => `<div class="row"><div class="when">${date}</div><div class="what">
+  <h3>${esc(title)}</h3>${org ? `<p class="org">${esc(org)}</p>` : ""}${sum ? `<p class="sum">${esc(sum)}</p>` : ""}
+  ${items && items.length ? `<ul>${items.map(i => `<li>${esc(i)}</li>`).join("")}</ul>` : ""}
+  ${tools ? `<p class="tools">${esc(tools)}</p>` : ""}</div></div>`;
+const sec = (title, rows) => `<section><div class="keep"><h2>${title}</h2>${rows[0]}</div>${rows.slice(1).join("")}</section>`;
+
+function render(){
+  const C = CONTENT[lang], V = C.cv;
+  document.documentElement.lang = lang;
+  document.title = `Armin Iranpour – ${V.doc}`;
+  document.getElementById("back").textContent = lang === "de" ? "← Zur Website" : "← Back to website";
+  document.getElementById("headline").textContent = V.headline;
+  document.getElementById("contact").innerHTML =
+    [esc(C.location), `<a href="tel:${PERSON.phone.replace(/\s/g,"")}">${PERSON.phone}</a>`,
+     `<a href="mailto:${PERSON.email}">${PERSON.email}</a>`, `<a href="https://${PERSON.linkedin}">${PERSON.linkedin}</a>`]
+     .map(x => `<li>${x}</li>`).join("");
+
+  const exp  = C.exp.map(j => row(when(j.date), j.role, `${j.org} · ${j.meta}`, j.summary, j.items, j.tools ? `${V.toolsLabel} ${j.tools}` : ""));
+  const edu  = C.edu.map(e => row(when(e.date), e.degree, e.school + (e.note ? ` · ${e.note}` : ""), e.text));
+  const proj = C.proj.map(p => row(esc(p.tools), p.title, p.ctx, `${p.text} ${C.projLabels.result}: ${p.result}.`));
+  const skills = `<section><h2>${V.skillsTitle}</h2><dl class="kv">${C.skills.map(([g,t]) => `<dt>${esc(g)}</dt><dd>${esc(t)}</dd>`).join("")}</dl></section>`;
+  const langs  = `<section><h2>${C.langsTitle}</h2><dl class="kv">${C.langs.map(([n,l]) => `<dt>${esc(n)}</dt><dd>${esc(l)}</dd>`).join("")}</dl></section>`;
+  const sign = V.place ? `<p class="sign">${V.place}, ${V.date(new Date())}<br><span class="name">${PERSON.name}</span></p>` : "";
+
+  document.getElementById("body").innerHTML =
+    `<section><h2>${V.summaryTitle}</h2><p class="summary">${esc(V.summary)}</p></section>` +
+    sec(V.expTitle, exp) + sec(V.eduTitle, edu) + sec(V.projTitle, proj) + skills + langs + sign;
+  saveLang(lang);
+}
+document.addEventListener("click", e => { const a = e.target.closest("[data-lang]"); if (a){ e.preventDefault(); lang = a.dataset.lang; render(); } });
+document.getElementById("print").addEventListener("click", () => window.print());
+render();
+</script>
+</body>
+</html>
